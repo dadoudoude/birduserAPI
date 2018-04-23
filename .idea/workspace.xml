@@ -16,6 +16,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report/__init__.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report/htmlreport.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report/send_email.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cameluser/send_email.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../forTest/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../forTest/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../bird/app/aspirit_13.apk" afterPath="" />
@@ -91,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/report/send_email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.74182445">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -128,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlreport.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="htmlreport.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report/htmlreport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68846816">
-              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="78" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="78" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
               </folding>
@@ -185,8 +186,8 @@
         <option value="$PROJECT_DIR$/interface/test_01.py" />
         <option value="$PROJECT_DIR$/interface/test_03.py" />
         <option value="$PROJECT_DIR$/interface/test_mycenter.py" />
-        <option value="$PROJECT_DIR$/report/send_email.py" />
         <option value="$PROJECT_DIR$/report/htmlreport.py" />
+        <option value="$PROJECT_DIR$/report/send_email.py" />
       </list>
     </option>
   </component>
@@ -644,7 +645,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="147" y="83" width="1938" height="1048" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -653,7 +654,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -892,6 +893,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3215#3230#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -964,6 +968,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3321859">
           <caret line="627" column="0" selection-start-line="627" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
+          <folding>
+            <element signature="e#3215#3230#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,22 +1022,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/send_email.py">
+    <entry file="file://$PROJECT_DIR$/report/htmlreport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="78" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#15#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/htmlreport.py">
+    <entry file="file://$PROJECT_DIR$/report/send_email.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68846816">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.74182445">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
