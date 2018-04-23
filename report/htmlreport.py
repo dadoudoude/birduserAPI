@@ -20,7 +20,8 @@ def all_case():
     return testcase
 if __name__ == "__main__":
 
-    report_path="C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\report\\result.html"
+    #report_path="C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\report\\result.html"
+    report_path="/var/lib/jenkins/workspace/birduserAPItest/report/result.html"
     fp= open(report_path,"wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
                                            title=u'鸟类数据中心API测试报告',
