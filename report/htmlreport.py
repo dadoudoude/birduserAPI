@@ -1,7 +1,7 @@
 # coding:utf-8
 import unittest
 import HTMLTestRunner
-from report.send_email import main2
+from report/send_email import main2
 def all_case():
     case_dir = "C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\interface"
     testcase = unittest.TestSuite()
@@ -28,6 +28,6 @@ if __name__ == "__main__":
     runner.run(all_case())
     print(u"测试用例执行已结束")
     fp.close()
-    #print(u"即将发送邮件，请稍等")
-    #main2()
-    #print(u"邮件发送成功，请注意查收")
+    print(u"即将发送邮件，请稍等")
+    main2()
+    print(u"邮件发送成功，请注意查收")
