@@ -5,7 +5,8 @@ import sys
 sys.path.append('/var/lib/jenkins/workspace/birduserAPItest/report')
 from send_email import main2
 def all_case():
-    case_dir = "C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\interface"
+    #case_dir = "C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\interface"
+    case_dir = "/var/lib/jenkins/workspace/birduserAPItest/interface"
     testcase = unittest.TestSuite()
     discover = unittest.defaultTestLoader.discover(case_dir,pattern="test*.py",top_level_dir=None)
     # discover方法筛选出来的用例，循环添加到测试套件中
