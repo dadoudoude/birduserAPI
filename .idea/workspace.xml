@@ -16,20 +16,22 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report/__init__.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report/htmlreport.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report/send_email.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cameluser/send_email.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../forTest/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../forTest/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xiancheng/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../bird/app/aspirit_13.apk" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../bird/birdtest/run.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../bird/birdtest/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cameluser/interface.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cattleuser/interface.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cattleuser/new.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cattleuser/test.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../doudou" afterPath="$PROJECT_DIR$/../doudou" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bird/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../bird/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bird/birdtest/baseSet.py" afterPath="$PROJECT_DIR$/../bird/birdtest/baseSet.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../camel/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../camel/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cameluser/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../cameluser/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cameluser/interface.py" afterPath="$PROJECT_DIR$/../cameluser/interface.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cattleuser/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../cattleuser/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cattleuser/interface.py" afterPath="$PROJECT_DIR$/../cattleuser/interface.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ceshiOutput/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ceshiOutput/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ceshiOutput/ceshi_add/demaxiya.py" afterPath="$PROJECT_DIR$/../ceshiOutput/ceshi_add/demaxiya.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../forTest/.idea/forTest.iml" afterPath="$PROJECT_DIR$/../forTest/.idea/forTest.iml" />
@@ -56,17 +58,19 @@
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test01__2_.coverage" NAME="Unittest Test.test01 (2) Coverage Results" MODIFIED="1523429144986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test01__5_.coverage" NAME="Unittest Test.test01 (5) Coverage Results" MODIFIED="1523437047625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test02__3_.coverage" NAME="Unittest Test.test02 (3) Coverage Results" MODIFIED="1523522581178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test04.coverage" NAME="Unittest Test.test04 Coverage Results" MODIFIED="1524812563862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test02__2_.coverage" NAME="Unittest Test.test02 (2) Coverage Results" MODIFIED="1523521917633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/birddatacenter$send_email.coverage" NAME="send_email Coverage Results" MODIFIED="1523696718689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test02__1_.coverage" NAME="Unittest Test.test02 (1) Coverage Results" MODIFIED="1523442419074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittests_in_devices.coverage" NAME="Unittests in devices Coverage Results" MODIFIED="1523684243982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test03.coverage" NAME="Unittest Test.test03 Coverage Results" MODIFIED="1523612481032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test03.coverage" NAME="Unittest Test.test03 Coverage Results" MODIFIED="1524811981752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test01__1_.coverage" NAME="Unittest Test.test01 (1) Coverage Results" MODIFIED="1523428740789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/birddatacenter$htmlreport.coverage" NAME="htmlreport Coverage Results" MODIFIED="1523695349027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/birddatacenter$test_area_user.coverage" NAME="test_area_user Coverage Results" MODIFIED="1524799559375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/birddatacenter$htmlreport.coverage" NAME="htmlreport Coverage Results" MODIFIED="1524812632526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report" />
     <SUITE FILE_PATH="coverage/birddatacenter$htmlreport__1_.coverage" NAME="htmlreport (1) Coverage Results" MODIFIED="1524464538804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test03__1_.coverage" NAME="Unittest Test.test03 (1) Coverage Results" MODIFIED="1523612168158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test02.coverage" NAME="Unittest Test.test02 Coverage Results" MODIFIED="1523674057329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test01.coverage" NAME="Unittest Test.test01 Coverage Results" MODIFIED="1523432064699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test02.coverage" NAME="Unittest Test.test02 Coverage Results" MODIFIED="1524799903758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test01.coverage" NAME="Unittest Test.test01 Coverage Results" MODIFIED="1524811101395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test02__5_.coverage" NAME="Unittest Test.test02 (5) Coverage Results" MODIFIED="1523440158062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/birddatacenter$Unittest_Test_test01__4_.coverage" NAME="Unittest Test.test01 (4) Coverage Results" MODIFIED="1523432489103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -83,19 +87,18 @@
         <entry file="file://$PROJECT_DIR$/interface/test_device.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <caret line="30" column="71" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="71" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
-                <element signature="e#305#6136#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report/send_email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74182445">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -108,10 +111,21 @@
         <entry file="file://$PROJECT_DIR$/interface/test_area_user.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <caret line="97" column="53" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
-                <element signature="e#307#6597#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_changepw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/test_changepw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/interface/test_mycenter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
               </folding>
@@ -129,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlreport.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="htmlreport.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/report/htmlreport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="78" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.3321859">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
               </folding>
@@ -185,9 +199,13 @@
         <option value="$PROJECT_DIR$/interface/test_02.py" />
         <option value="$PROJECT_DIR$/interface/test_01.py" />
         <option value="$PROJECT_DIR$/interface/test_03.py" />
-        <option value="$PROJECT_DIR$/interface/test_mycenter.py" />
         <option value="$PROJECT_DIR$/report/htmlreport.py" />
         <option value="$PROJECT_DIR$/report/send_email.py" />
+        <option value="$PROJECT_DIR$/interface/asdf.py" />
+        <option value="$PROJECT_DIR$/interface/test_area_user.py" />
+        <option value="$PROJECT_DIR$/interface/test_device.py" />
+        <option value="$PROJECT_DIR$/interface/test_mycenter.py" />
+        <option value="$PROJECT_DIR$/interface/test_changepw.py" />
       </list>
     </option>
   </component>
@@ -197,8 +215,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="147" />
-    <option name="y" value="83" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
@@ -227,7 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -267,6 +284,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,19 +298,19 @@
       <recent name="C:\Users\liugc\PycharmProjects\birddatacenter\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.htmlreport (1)">
+  <component name="RunManager" selected="Python.htmlreport">
     <configuration default="false" name="Unittest Test.test02" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="birddatacenter" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\liugc\PycharmProjects\birddatacenter\interface\test_device.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/test_area_user.py" />
       <option name="CLASS_NAME" value="Test" />
       <option name="METHOD_NAME" value="test02" />
       <option name="FOLDER_NAME" value="" />
@@ -304,22 +322,68 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in test_device" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest Test.test01" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="birddatacenter" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\liugc\PycharmProjects\birddatacenter\interface\test_device.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/test_device.py" />
+      <option name="CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Test.test03" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="birddatacenter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/test_mycenter.py" />
+      <option name="CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Test.test04" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="birddatacenter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/test_changepw.py" />
+      <option name="CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -334,24 +398,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="birddatacenter" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\liugc\PycharmProjects\birddatacenter\report\htmlreport.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="htmlreport (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/report" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -359,24 +405,6 @@
       <module name="birddatacenter" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/report/htmlreport.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="send_email" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/report" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="birddatacenter" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/report/send_email.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -576,17 +604,17 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Test.test02" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_device" />
-      <item index="2" class="java.lang.String" itemvalue="Python.htmlreport" />
-      <item index="3" class="java.lang.String" itemvalue="Python.htmlreport (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.send_email" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Test.test01" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test.test03" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test04" />
+      <item index="4" class="java.lang.String" itemvalue="Python.htmlreport" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.htmlreport (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.send_email" />
-        <item index="2" class="java.lang.String" itemvalue="Python.htmlreport" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_device" />
+        <item index="0" class="java.lang.String" itemvalue="Python.htmlreport" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Test.test04" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test.test03" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test01" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test.test02" />
       </list>
     </recent_temporary>
@@ -612,44 +640,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_Test_test02 - 2018.04.14 at 10h 47m 41s.xml">
-      <configuration name="Unittest Test.test02" configurationId="tests" />
+    <history-entry file="Unittest_Test_test01 - 2018.04.27 at 11h 39m 09s.xml">
+      <configuration name="Unittest Test.test01" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Test_test03 - 2018.04.13 at 17h 41m 25s.xml">
+    <history-entry file="Unittest_Test_test01 - 2018.04.27 at 11h 40m 02s.xml">
+      <configuration name="Unittest Test.test01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Test_test01 - 2018.04.27 at 14h 34m 36s.xml">
+      <configuration name="Unittest Test.test01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Test_test01 - 2018.04.27 at 14h 36m 19s.xml">
+      <configuration name="Unittest Test.test01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Test_test01 - 2018.04.27 at 14h 38m 29s.xml">
+      <configuration name="Unittest Test.test01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Test_test03 - 2018.04.27 at 14h 52m 28s.xml">
       <configuration name="Unittest Test.test03" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Test_test03_(1) - 2018.04.13 at 17h 36m 09s.xml">
-      <configuration name="Unittest Test.test03 (1)" configurationId="tests" />
+    <history-entry file="Unittest_Test_test03 - 2018.04.27 at 14h 53m 10s.xml">
+      <configuration name="Unittest Test.test03" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 11h 35m 05s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
+    <history-entry file="Unittest_Test_test04 - 2018.04.27 at 15h 00m 19s.xml">
+      <configuration name="Unittest Test.test04" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 11h 56m 33s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
+    <history-entry file="Unittest_Test_test04 - 2018.04.27 at 15h 01m 05s.xml">
+      <configuration name="Unittest Test.test04" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 11h 58m 32s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 13h 22m 32s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 13h 29m 34s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 13h 34m 23s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_devices - 2018.04.14 at 13h 37m 37s.xml">
-      <configuration name="Unittests in devices" configurationId="tests" />
+    <history-entry file="Unittest_Test_test04 - 2018.04.27 at 15h 02m 47s.xml">
+      <configuration name="Unittest Test.test04" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="147" y="83" width="1938" height="1048" extended-state="0" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -660,6 +687,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -696,7 +724,72 @@
           <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/send_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test_area_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test_mycenter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/htmlreport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test_device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,7 +810,6 @@
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#307#6597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -764,7 +856,6 @@
           <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -785,7 +876,6 @@
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#307#6597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -832,7 +922,6 @@
           <caret line="369" column="4" selection-start-line="369" selection-start-column="4" selection-end-line="369" selection-end-column="4" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -853,7 +942,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -874,7 +962,6 @@
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -893,9 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3215#3230#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,7 +989,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -916,7 +999,6 @@
           <caret line="307" column="19" selection-start-line="307" selection-start-column="19" selection-end-line="307" selection-end-column="19" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,7 +1009,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -938,7 +1019,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -968,20 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3321859">
           <caret line="627" column="0" selection-start-line="627" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
-          <folding>
-            <element signature="e#3215#3230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/test_area_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#307#6597#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,13 +1067,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/test_device.py">
+    <entry file="file://$PROJECT_DIR$/report/send_email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test_area_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="53" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#305#6136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1015,29 +1090,39 @@
     <entry file="file://$PROJECT_DIR$/interface/test_mycenter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test_device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="71" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test_changepw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/report/htmlreport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="78" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.3321859">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/send_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74182445">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

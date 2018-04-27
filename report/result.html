@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>鸟类数据中心API测试报告</title>
+    <title>奶牛userAPI测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,10 +188,10 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>鸟类数据中心API测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-04-23 14:22:19</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:16.650911</p>
-<p class='attribute'><strong>Status:</strong> Pass 3</p>
+<h1>奶牛userAPI测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-04-23 15:48:54</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:05.510650</p>
+<p class='attribute'><strong>Status:</strong> Failure 1</p>
 
 <p class='description'>用例执行结果</p>
 </div>
@@ -221,97 +221,39 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>test_area_user.Test</td>
-    <td>1</td>
+<tr class='failClass'>
+    <td>test_all.Test</td>
     <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test02</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test01</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        fail</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 
+ft1.1: Traceback (most recent call last):
+  File "C:\Users\liugc\PycharmProjects\cattleuser\interface\test_all.py", line 275, in test01
+    self.assertIn("uuid",exclude.text)
+AssertionError: 'uuid' not found in '[]'
+Traceback (most recent call last):
+  File "C:\Users\liugc\PycharmProjects\cattleuser\interface\test_all.py", line 275, in test01
+    self.assertIn("uuid",exclude.text)
+AssertionError: 'uuid' not found in '[]'
 
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='passClass'>
-    <td>test_device.Test</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
-
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test01</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
-        pass</a>
-
-    <div id='div_pt2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.1: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='passClass'>
-    <td>test_mycenter.Test</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
-</tr>
-
-<tr id='pt3.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test03</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
-        pass</a>
-
-    <div id='div_pt3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.1: 
 
         </pre>
     </div>
@@ -322,9 +264,9 @@ pt3.1:
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>3</td>
-    <td>3</td>
+    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>

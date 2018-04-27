@@ -10,10 +10,12 @@ import HTMLTestRunner
 urllib3.disable_warnings()
 
 class Test(unittest.TestCase):
+
     def setUp(self):
         print("start")
     def tearDown(self):
         print("end")
+
     #围栏用户
     def test02(self):
         host='http://bird.test.druidtech.net'
@@ -121,6 +123,11 @@ class Test(unittest.TestCase):
         userid=str3[2:26]
         print("userid",userid)
 
+        #Get Myself Info
+        getmyselfinfo=requests.get(hosts+'/api/v2/user/me',headers=header,verify=False)
+        self.assertEquals(200,getmyselfinfo.status_code)
+        self.assertIn("username",getmyselfinfo.text)
+
         #authority授权
         auth={"sim_auth":0,"search_auth":0,"company_auth":0,"device_auth":0,"data_auth":0,"platform_auth":0,"firmware_auth":0,"setting_auth":3,"user_auth":3,"export_auth":1,"biological_auth":3,"env_auth":1,"bhv_auth":1,"analysis_auth":1}
         authdata=json.dumps(auth)
@@ -132,6 +139,16 @@ class Test(unittest.TestCase):
         adddata=json.dumps(add)
         adddevice=requests.post(hosts+'/api/v2/user/id/'+userid+'/add_auth',adddata,headers=header,verify=False)
         self.assertEquals(201,adddevice.status_code)
+
+        #List Devices Info
+        listdevicesinfo=requests.get(hosts+'/api/v2/user/id/'+userid+'/device',headers=header,verify=False)
+        self.assertEquals(200,listdevicesinfo.status_code)
+        self.assertIn("updated_at",listdevicesinfo.text)
+
+        #GET User With id
+        getuserwithid=requests.get(hosts+'/api/v2/user/id/'+userid,headers=header,verify=False)
+        self.assertEquals(200,getuserwithid.status_code)
+        self.assertIn("username",getuserwithid.text)
 
         #delete device from user
         deletedevice=requests.post(hosts+'/api/v2/user/id/'+userid+'/del_auth',adddata,headers=header,verify=False)
@@ -146,3 +163,18 @@ class Test(unittest.TestCase):
         #delete user
         deleteuser=requests.delete(hosts+'/api/v2/user/id/'+userid,headers=header,verify=False)
         self.assertEquals(204,deleteuser.status_code)
+
+        #Get Company
+        getcompany=requests.get(hosts+'/api/v2/company/',headers=header,verify=False)
+        print("company",getcompany.text)
+
+        #List Firmware
+        listfirmware=requests.get(hosts+'/api/v2/firmware/',headers=header,verify=False)
+        print("firmware",listfirmware.text)
+        firm=eval(listfirmware.text)
+        firmid=firm[0]['id']
+        print("firmid",firmid)
+
+        #Download Firmware with ID
+        dlfirm=requests.get(hosts+'/api/v2/firmware/download/'+firmid,headers=header,verify=False)
+        self.assertEquals(200,dlfirm.status_code)

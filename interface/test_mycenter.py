@@ -52,7 +52,13 @@ class Test(unittest.TestCase):
         data11=eval(getdevicebymark.text)
         deviceid=data11[0]['id']
 
-        # 导出数据
+        #update myinfo
+        myinfo={"phone":"135123456789666","email":"1236666@163.com","address":"1231266666"}
+        infodata=json.dumps(myinfo)
+        updatemyinfo=requests.put(hosts+'/api/v2/user/info',infodata,headers=header,verify=False)
+        self.assertEquals(201,updatemyinfo.status_code)
+
+        # 导出数据csv多个设备
         device={"id":[deviceid]}
         devicedata=json.dumps(device)
         exportdata1=requests.post(hosts+'/api/v2/device/csv_multiple',devicedata,headers=header,verify=False)
@@ -67,7 +73,7 @@ class Test(unittest.TestCase):
         data12=eval(getunreadmessage.text)
         messageid=data12[0]['id']
 
-        #message 标记已读
+        #PUT message read 标记已读
         message={"id":[messageid]}
         messagedata=json.dumps(message)
         putmessageread=requests.put(hosts+'/api/v2/message/',messagedata,headers=header,verify=False)
@@ -78,7 +84,8 @@ class Test(unittest.TestCase):
         self.assertEquals(204,deletemessage.status_code)
 
         #导出数据产生通知消息
-        exportdata2=requests.post(hosts+'/api/v2/device/csv_multiple',devicedata,headers=header,verify=False)
+        exportdata2=requests.post(hosts+'/api/v2/device/kml_multiple',devicedata,headers=header,verify=False)
+        self.assertEquals(200,exportdata2.status_code)
         #获取messageid
         getunreadmessage2=requests.get(hosts+'/api/v2/message/unread',headers=header,verify=False)
         self.assertEquals(200,getunreadmessage2.status_code)
@@ -87,12 +94,49 @@ class Test(unittest.TestCase):
         data13=eval(getunreadmessage2.text)
         print("test ",data13[0]['id'])
         messageid2=data13[0]['id']
-
         #删除所有message
         message2={"id":[messageid2]}
         messagedata2=json.dumps(message2)
         deletemessages=requests.put(hosts+'/api/v2/message/delete',messagedata2,headers=header,verify=False)
         self.assertEquals(204,deletemessages.status_code)
+
+        #导出数据 csv单个设备
+        exportdata3=requests.post(hosts+'/api/v2/device/csv',devicedata,headers=header,verify=False)
+        self.assertEquals(200,exportdata3.status_code)
+
+        #导出excel单个文件
+        exportdata4=requests.post(hosts+'/api/v2/device/excel',devicedata,headers=header,verify=False)
+        self.assertEquals(200,exportdata4.status_code)
+
+        #导出excel多个文件
+        exportdata5=requests.post(hosts+'/api/v2/device/excel_multiple',devicedata,headers=header,verify=False)
+        self.assertEquals(200,exportdata5.status_code)
+
+        #GET Many Device
+        exportdata6=requests.post(hosts+'/api/v2/device/many',devicedata,headers=header,verify=False)
+        self.assertEquals(200,exportdata6.status_code)
+
+        #Exclude Device
+        exportdata7=requests.post(hosts+'/api/v2/device/exclude',devicedata,headers=header,verify=False)
+        self.assertEquals(200,exportdata7.status_code)
+
+        #获取messageid
+        unreadme=requests.get(hosts+'/api/v2/message/unread',headers=header,verify=False)
+        #get messageid
+        da1=eval(unreadme.text)
+        print("test ",da1[0]['id'])
+        mes1=da1[0]['id']
+        mes2=da1[1]['id']
+        mes3=da1[2]['id']
+
+        message3={"id":[mes1,mes2,mes3]}
+        messagedata3=json.dumps(message3)
+        deleteallme=requests.put(hosts+'/api/v2/message/delete',messagedata3,headers=header,verify=False)
+        self.assertEquals(204,deleteallme.status_code)
+
+
+
+
 
 
         #个人设置
