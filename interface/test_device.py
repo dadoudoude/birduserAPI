@@ -47,7 +47,7 @@ class Test(unittest.TestCase):
         #
         #List Devices
         listdevices=requests.get(hosts+'/api/v2/device/',headers=header,verify=False)
-        mark1=eval(listdevices.text)[0]['mark']
+        mark1=eval(listdevices.text)[-1]['mark']
         mark=str(mark1)
         print("mark",mark)
 
@@ -67,6 +67,7 @@ class Test(unittest.TestCase):
 
         #get device setting by deviceid
         getsetting=requests.get(hosts+'/api/v2/setting/device/'+deviceid,headers=header,verify=False)
+        print(getsetting.status_code,getsetting.text)
         self.assertIn("uuid",getsetting.text)
         self.assertEquals(200,getsetting.status_code)
         print("getsetting.text",getsetting.text)

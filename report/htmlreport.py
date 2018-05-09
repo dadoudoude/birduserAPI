@@ -2,12 +2,16 @@
 import unittest
 import HTMLTestRunner
 import sys
-sys.path.append('/var/lib/jenkins/workspace/birduserAPItest/report')
-from send_email import main2
+sys.path.append('/var/lib/jenkins/workspace/birduserAPItest/')
+from report.send_email import main2   #该语法为Linux下python的引用法，windows下为report.sendemail
 def all_case():
+    #windows的路径
     #case_dir = "C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\interface"
+    #Linux的路径 可运行之后再根据workspace的路径进行调试
     case_dir = "/var/lib/jenkins/workspace/birduserAPItest/interface"
+    #创建unittest套件
     testcase = unittest.TestSuite()
+    #查询以test开头的.py文件
     discover = unittest.defaultTestLoader.discover(case_dir,pattern="test*.py",top_level_dir=None)
     # discover方法筛选出来的用例，循环添加到测试套件中
     #for test_suite in discover:
@@ -15,13 +19,16 @@ def all_case():
     #        #testunit.addTests(test_case)
     #       # print(testunit)
     print("discover",discover)
+    #添加查询到的测试用例
     testcase.addTests(discover)
     print("aa",testcase)
     return testcase
+#运行
 if __name__ == "__main__":
 
     #report_path="C:\\Users\\liugc\\PycharmProjects\\birddatacenter\\report\\result.html"
     report_path="/var/lib/jenkins/workspace/birduserAPItest/report/result.html"
+    #wb 以二进制格式打开一个文件只用于写入。如果该文件已存在则将其覆盖。如果该文件不存在，创建新文件。
     fp= open(report_path,"wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
                                            title=u'鸟类数据中心API测试报告',

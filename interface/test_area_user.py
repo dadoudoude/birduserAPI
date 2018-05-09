@@ -18,21 +18,31 @@ class Test(unittest.TestCase):
 
     #围栏用户
     def test02(self):
+        #登录页
         host='http://bird.test.druidtech.net'
+        #内容页
         hosts='https://bird.test.druidtech.net'
+        #首页get请求
         r=requests.get(host)
+        #打印状态码10*、20*、30*、40*、50*
         print("status",r.status_code)
+        #打印get到的网页内容
         print(r.text)
 
-        #login
+        #login 登录请求
         namepassword={"username":"ceshiwushan","password":"337f18719259e77cc7519a21fd4c230b21917b18d5c6cfd68501c9275339c6ea"}
+        #把登录请求数据转为json格式
         npdata=json.dumps(namepassword)
+        #传入json格式的登录数据，post登录，    verify=False忽略SSL整数的验证，使访问https不报错
         login=requests.post('https://bird.test.druidtech.net'+'/api/v2/login',npdata,verify=False)
+        #打印登录状态码
         print("status",login.status_code)
+        #打印登录后返回的内容
         print("login.text",login.text)
+        #打印header中的X-Druid-Authentication内容（该web以此作为身份认证）
         print("loginheader",login.headers['X-Druid-Authentication'])
 
-        #header
+        #header  请求每个url都需要的
         header={
         "Connection": "keep-alive",
             "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
@@ -41,7 +51,6 @@ class Test(unittest.TestCase):
             "x-druid-authentication":login.headers['X-Druid-Authentication'],
             "Host": "bird.test.druidtech.net",
             "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)"}
-
 
 
         #create area
@@ -54,10 +63,10 @@ class Test(unittest.TestCase):
         getareas1=requests.get(hosts+'/api/v2/ditu/area',headers=header,verify=False)
         self.assertEquals(200,getareas1.status_code)
         self.assertIn("石家庄API",getareas1.text)
-        #正则表达式获取areaid
+        #获取areaid
         data1=eval(getareas1.text)
         areaid=data1[0]['id']
-        #areas1 = re.findall(r'"id":"([^","]+)?', getareas1.text)
+        #areas1 = re.findall(r'"id":"([^","]+)?', getareas1.text)  #正则表达式获取areaid  能用eval语法就用，其次是分片取值（备注：eval不支持元素为NULL）
         #str1=str(areas1)
         #areaid=str1[2:26]
         print("areaid",areaid)

@@ -32,7 +32,7 @@ class Test(unittest.TestCase):
         login=requests.post('https://bird.test.druidtech.net'+'/api/v2/login',npdata,verify=False)
         #print("status",login.status_code)
         #print("login.text",login.text)
-        #print("loginheader",login.headers['X-Druid-Authentication'])
+        print("loginheader",login.headers['X-Druid-Authentication'])
 
         #header
         header={
@@ -70,6 +70,7 @@ class Test(unittest.TestCase):
 
         #get devices count获取当前用户设备数量
         getdevicescount=requests.get(hosts+'/api/v2/device/count',headers=header,verify=False)
+        print(hosts+'/api/v2/device/count')
         print("当前账户拥有设备数量：",getdevicescount.text,"个")
         self.assertEquals(200,getdevicescount.status_code)
 
