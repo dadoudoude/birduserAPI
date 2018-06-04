@@ -63,8 +63,19 @@ class Test(unittest.TestCase):
             "Host": "bird.test.druidtech.net",
             "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
             "x-result-sort":"-updated_at"
-             #"x-result-limit":limit
              }
+        headerdvdn={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-updated_at",
+             "x-result-limit":"10",
+            "x-result-offset": "20"
+        }
 
 
 
@@ -75,7 +86,8 @@ class Test(unittest.TestCase):
         self.assertEquals(200,getdevicescount.status_code)
 
         #根据降序对设备排序
-        getdevices1=requests.get(hosts+'/api/v2/device/page/',headers=headerup,verify=False)
+        getdevices1=requests.get(hosts+'/api/v2/device/',headers=headerup,verify=False)
+        print(getdevices1.status_code)
         print(getdevices1.text)
         print(eval(getdevices1.text)[0]['updated_at'])
         print(eval(getdevices1.text)[-1]['updated_at'])
@@ -84,7 +96,7 @@ class Test(unittest.TestCase):
         self.assertEquals(True,bool1)
 
         #根据升序对设备排序
-        getdevices2=requests.get(hosts+'/api/v2/device/page/',headers=headerdn,verify=False)
+        getdevices2=requests.get(hosts+'/api/v2/device/',headers=headerdn,verify=False)
         print(getdevices2.text)
         print(eval(getdevices2.text)[0]['updated_at'])
         print(eval(getdevices2.text)[-1]['updated_at'])
@@ -141,7 +153,8 @@ class Test(unittest.TestCase):
             "Host": "bird.test.druidtech.net",
             "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
             "x-result-sort":"-timestamp",
-            "x-result-limit":"20"
+            "x-result-limit":"10",
+            "x-result-offset":"10"
              }
 
 
@@ -284,35 +297,35 @@ class Test(unittest.TestCase):
         self.assertEquals(True,bool14)
 
         #device根据时间戳筛选设备
-        timeparam1=eval(getdevices2.text)[0]['updated_at']
-        getdevwithparam=requests.get(hosts+'/api/v2/device/page/'+timeparam1,headers=header,verify=False)
+        getdevwithparam=requests.get(hosts+'/api/v2/device/',headers=headerdvdn,verify=False)
         self.assertEquals(200,getdevwithparam.status_code)
-        self.assertIn("device_type",getdevwithparam.text)
+        #print("getdevwithparam",getdevwithparam.text)
+        #self.assertIn("device_type",getdevwithparam.text)
 
-        #gps根据时间戳筛选设备
-        getdevwithparam2=requests.get(hosts+'/api/v2/gps/device/'+deviceid+'/page/'+gpsparam,headers=headertimestampdn,verify=False)
+        #gps根据时间戳翻页
+        getdevwithparam2=requests.get(hosts+'/api/v2/gps/device/'+deviceid,headers=headertimestampdn,verify=False)
         self.assertEquals(200,getdevwithparam2.status_code)
         self.assertIn("company_name",getdevwithparam2.text)
         #gps根据device_id筛选设备
-        getdevwithparam2=requests.get(hosts+'/api/v2/gps/device/'+deviceid+'/page/'+deviceid1,headers=headeriddn,verify=False)
+        getdevwithparam2=requests.get(hosts+'/api/v2/gps/device/'+deviceid,headers=headeriddn,verify=False)
         self.assertEquals(200,getdevwithparam2.status_code)
         self.assertIn("company_name",getdevwithparam2.text)
 
-        #behavior根据时间戳筛选设备
-        getdevwithparam1=requests.get(hosts+'/api/v2/behavior/device/'+deviceidbeh+'/page/'+behaviorparam,headers=headertimestampup,verify=False)
+        #behavior根据时间戳翻页
+        getdevwithparam1=requests.get(hosts+'/api/v2/behavior/device/'+deviceidbeh,headers=headertimestampup,verify=False)
         self.assertEquals(200,getdevwithparam1.status_code)
         self.assertIn("company_name",getdevwithparam1.text)
         #behavior根据device_id筛选设备
-        getdevwithparam1=requests.get(hosts+'/api/v2/behavior/device/'+deviceidbeh+'/page/'+behdeviceid,headers=headeriddn,verify=False)
+        getdevwithparam1=requests.get(hosts+'/api/v2/behavior/device/'+deviceidbeh,headers=headeriddn,verify=False)
         self.assertEquals(200,getdevwithparam1.status_code)
         self.assertIn("company_name",getdevwithparam1.text)
 
 
-        #sms根据时间戳筛选设备
-        getdevwithparam3=requests.get(hosts+'/api/v2/gps/device/'+deviceid+'/sms/page/'+smsparam,headers=headertimestampdn,verify=False)
+        #sms根据时间戳翻页
+        getdevwithparam3=requests.get(hosts+'/api/v2/gps/device/'+deviceid,headers=headertimestampup,verify=False)
         self.assertEquals(200,getdevwithparam3.status_code)
         self.assertIn("company_name",getdevwithparam3.text)
         #sms根据id筛选设备
-        getdevwithparam3=requests.get(hosts+'/api/v2/gps/device/'+deviceid+'/sms/page/'+smsdeviceid,headers=headeriddn,verify=False)
+        getdevwithparam3=requests.get(hosts+'/api/v2/gps/device/'+deviceid,headers=headeriddn,verify=False)
         self.assertEquals(200,getdevwithparam3.status_code)
         self.assertIn("company_name",getdevwithparam3.text)
