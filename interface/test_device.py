@@ -161,5 +161,105 @@ class Test(unittest.TestCase):
         self.assertEquals(200,getbird.status_code)
         self.assertIn("updated_at",getbird.text)
 
+        #环境数据翻页
+        gpsheaderp3={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-timestamp",
+            "x-result-limit":"100",
+            "x-result-offset":"200"
+        }
+        gpsp3=requests.get(hosts+'/api/v2/gps/device/'+deviceid,headers=gpsheaderp3,verify=False)
+        self.assertEquals(200,gpsp3.status_code)
+        self.assertIn("company_id",gpsp3.text)
+
+        gpsheaderp2={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-timestamp",
+            "x-result-limit":"100",
+            "x-result-offset":"200"
+        }
+        gpsp2=requests.get(hosts+'/api/v2/gps/device/'+deviceid,headers=gpsheaderp2,verify=False)
+        self.assertEquals(200,gpsp2.status_code)
+        self.assertIn("company_id",gpsp2.text)
+
+        #行为数据翻页
+        bhheaderp3={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-timestamp",
+            "x-result-limit":"20",
+            "x-result-offset":"40"
+        }
+        bhp3=requests.get(hosts+'/api/v2/behavior/device/'+deviceid,headers=bhheaderp3,verify=False)
+        self.assertEquals(200,bhp3.status_code)
+        self.assertIn("company_id",bhp3.text)
+
+        bhheaderp2={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-timestamp",
+            "x-result-limit":"20",
+            "x-result-offset":"20"
+        }
+        bhp2=requests.get(hosts+'/api/v2/behavior/device/'+deviceid,headers=bhheaderp2,verify=False)
+        self.assertEquals(200,bhp2.status_code)
+        self.assertIn("company_id",bhp2.text)
+
+        #短信数据翻页
+        smsheaderp3={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-timestamp",
+            "x-result-limit":"10",
+            "x-result-offset":"10"
+        }
+        smsp3=requests.get(hosts+'/api/v2/gps/device/5881e103f01fce1212f038a4/sms',headers=smsheaderp3,verify=False)
+        self.assertEquals(200,smsp3.status_code)
+        self.assertIn("company_id",smsp3.text)
+
+        smsheaderp2={
+            "Connection": "keep-alive",
+            "conten-type": "application/json; text/plain; charset=utf-8; multipart/form-data",
+            "content-disposition": "form-data; name='imgType'",
+            "Accept-Encoding": "gzip, deflate, br",
+            "x-druid-authentication":login.headers['X-Druid-Authentication'],
+            "Host": "bird.test.druidtech.net",
+            "User-Agent": "Apache-HttpClient/4.5.5 (Java/1.8.0_144)",
+            "x-result-sort":"-timestamp",
+            "x-result-limit":"10"
+        }
+        smsp2=requests.get(hosts+'/api/v2/gps/device/5881e103f01fce1212f038a4/sms',headers=smsheaderp2,verify=False)
+        self.assertEquals(200,smsp2.status_code)
+        self.assertIn("company_id",smsp2.text)
+
+
+
 
 
